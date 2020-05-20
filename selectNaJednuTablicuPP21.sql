@@ -1,9 +1,9 @@
 # Filtriranje kolona
-# * - sve kolone
-select * from smjer;
+# Znak * označuje sve kolone
+select * from naziv_tablice;
 
 # nazivi kolona
-select *,naziv, opis, naziv, naziv from smjer;
+select upisati nazive kolona from naziv_tablice;
 
 # konstanta
 select naziv, 'Osijek' as grad from smjer;
@@ -18,18 +18,17 @@ as xxx from osoba;
 
 
 # filtriranje redova
-select * from smjer where sifra=2;
+select * from tablica where sifra=2;
 
-# operatori
-# uspoređivanja
+# operatori uspoređivanja
 # = < > <= >= != (<>)
 
-select * from osoba where sifra=10;
+select * from naziv_tablice where naziv_reda = broj reda koji želiš ispisati;
 
 
 # logički operatori
 # and or not
-select ime, prezime from osoba
+select  from osoba
 where sifra=2 or sifra=3;
 
 select ime, prezime from osoba
@@ -77,18 +76,8 @@ select * from osoba;
 # sebi postavite OIB (http://oib.itcentrala.com/oib-generator/)
 update osoba set oib='45467312111' where sifra=1;
 
-select * from osoba where oib is not null;
 
-use mjesta;
 
-# izlistajte sva mjesta u Osječko baranjskoj županiji
-
-use knjiznica;
-
-# Izlistajte imena autora knjiga koji su rođeni
-# na Vaš dan rođenja
-
-# DZ Učitati ostale baze i u svakoj izvesto po dva upita
 
 
 
